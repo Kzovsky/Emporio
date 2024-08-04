@@ -1,18 +1,116 @@
 * {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: 0%;
-    font-family: "poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Julius Sans One', sans-serif;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
 
+/* Remove a sublinhado dos links */
 a {
     text-decoration: none;
 }
-li {
+
+/* Remove a listagem padrão */
+li, ul {
     list-style: none;
+}
+
+/* HEADER */
+header {
+    background-color: #633211;
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    position: relative;
+}
+
+header .logo {
+    position: absolute; 
+    left: 20px; 
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    display: block;
+    width: 100px; 
+}
+
+.nome {
+    text-align: center;
+}
+
+.nome h1 {
+    font-size: 1.5em;
+    color: #fff; 
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+/* NAVEGAÇÃO */
+.navegacao {
+    background-color: #FFB901;
+    padding: 20px 4%;
+    margin-bottom: 30px;
+}
+
+.navegacao .interface {
+    display: flex;
+    justify-content: center; 
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000; /* Define a cor dos links */
+    font-weight: bold;
+}
+.navegacao ul li a{
+    padding: 50px;
+}
+
+/* CARROSSEL */
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2B01E;
+    padding: 0px;
+    padding-left: 10px;
+    gap: 70px;
+}
+.texto h2{
+    font-size: 36px;
+    padding-bottom: 20px;
+    justify-content: center;
+    text-align: center;
+}
+.texto p{
+    font-size: 28px;
+    justify-content: center;
+    text-align: center;
 }

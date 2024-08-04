@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.divided-section {
+    display: flex;
+    height: 100vh;
+}
+
+.image-side, .text-side {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-side {
+    background-color: #f0f0f0;
+}
+
+.image-side img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text-side {
+    background-color: #F2B01E;
+    text-align: center;
+    color: #000;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.text-side h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.text-side p {
+    margin: 10px 0;
+}
