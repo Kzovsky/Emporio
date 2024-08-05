@@ -57,9 +57,10 @@ header .logo {
 }
 
 .nome h1 {
-    font-size: 1.5em;
+    font-size: 2em;
     color: #fff; 
     font-family: 'Julius Sans One', sans-serif;
+    
 }
 
 /* NAVEGAÇÃO */
@@ -100,18 +101,46 @@ header .logo {
     justify-content: center;
     background-color: #F2B01E;
     padding: 0px;
-    padding-left: 10px;
-    gap: 70px;
-    box-shadow: #000;
+    padding-left: 0px;
+
+    gap: 0px;
+    width: 100%;
+}
+.img-banner {
+    display: flex;
+    float: left;
+    width: 50%;
 }
 .texto h2{
-    font-size: 36px;
+    font-size: 40px;
     padding-bottom: 20px;
     justify-content: center;
     text-align: center;
 }
 .texto p{
-    font-size: 28px;
+    font-size: 32px;
     justify-content: center;
     text-align: center;
+}
+section.carousel-text{
+    display: flex;
+}
+.carousel-text {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.texto {
+    flex: 1; /* Faz o texto ocupar o espaço restante */
+}
+
+.texto {
+    margin-left: -50px;
+}
+
+li:hover {
+    font-size: 1.5em;
+    transition-duration: 2s;
 }
