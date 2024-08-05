@@ -102,6 +102,7 @@ header .logo {
     padding: 0px;
     padding-left: 10px;
     gap: 70px;
+    box-shadow: #000;
 }
 .texto h2{
     font-size: 36px;
