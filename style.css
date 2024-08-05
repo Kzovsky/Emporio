@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Julius Sans One', sans-serif;
+    font-family: "Bona Nova SC", serif;
 }
 
 html {
@@ -17,12 +17,12 @@ html {
     display: flex;
 }
 
-/* Remove a sublinhado dos links */
+
 a {
     text-decoration: none;
 }
 
-/* Remove a listagem padrão */
+
 li, ul {
     list-style: none;
 }
@@ -83,7 +83,14 @@ header .logo {
 .menu li {
     margin: 0 15px;
 }
-
+.menu li:hover{
+    transform: translateY(-5px);
+    transform: scale(1.2);   
+    text-decoration: underline #633211;
+}
+.menu li{
+    transition:.2s;
+}
 .menu a {
     text-decoration: none;
     color: #000; /* Define a cor dos links */
@@ -102,7 +109,7 @@ header .logo {
     background-color: #F2B01E;
     padding: 0px;
     padding-left: 0px;
-
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
     gap: 0px;
     width: 100%;
 }
@@ -140,7 +147,54 @@ section.carousel-text{
     margin-left: -50px;
 }
 
-li:hover {
-    font-size: 1.5em;
-    transition-duration: 2s;
+
+
+
+.catalogo {
+    padding: 40px 4%;
+}
+.catalogo .titulo h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+    
+}
+.imgcatalogo ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 0;
+    gap: 20px;
+}
+.imgcatalogo li {
+    transition: .2s;
+    border-radius: 10px;
+    border: solid 1px #ccc;
+    margin: 10px;
+    list-style: none;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+.imgcatalogo li:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.imgcatalogo img {
+    border-radius: 10px;
+}
+.imgcatalogo h3 {
+    padding: 10px 0 5px;
+    margin: 0;
+    color: #333;
+    font-size: 1.2em;
+}
+.imgcatalogo p {
+    margin: 0;
+    font-size: 1em;
+    color: #555;
+}
+.imgcatalogo span {
+    color: gold;
 }
