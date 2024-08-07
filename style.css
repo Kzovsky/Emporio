@@ -148,10 +148,11 @@ section.carousel-text{
 }
 
 
-
+/* CATALOGO */
 
 .catalogo {
     padding: 40px 4%;
+
 }
 .catalogo .titulo h2 {
     font-family: 'Playfair Display', serif;
@@ -183,6 +184,7 @@ section.carousel-text{
 }
 .imgcatalogo img {
     border-radius: 10px;
+
 }
 .imgcatalogo h3 {
     padding: 10px 0 5px;
