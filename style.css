@@ -67,7 +67,7 @@ header .logo {
 .navegacao {
     background-color: #FFB901;
     padding: 20px 4%;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 .navegacao .interface {
@@ -98,6 +98,7 @@ header .logo {
 }
 .navegacao ul li a{
     padding: 50px;
+    padding-bottom: 0%;
 }
 
 /* CARROSSEL */
@@ -200,3 +201,26 @@ section.carousel-text{
 .imgcatalogo span {
     color: gold;
 }
+
+/* Filtro */
+.filtrar {
+    background-color: #FFB901;
+    padding: 20px 4%;
+
+}
+
+.filtrar .interface {
+    display: flex;
+    justify-content: center; 
+}
+
+.filter-menu select #category-filter {
+    display: flex;
+    justify-content: center;
+}
+
+.filter-menu option {
+    margin: 0 15px;
+}
+
+

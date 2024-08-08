@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <title>Minas Casa</title>
+</head>
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="index.html"><img src="imagens/Logo Minas Casa sem fundo.png" width="100px"></a>
+            </div>
+            <div class="nome">
+                <h1>Empório Minas Casa</h1>
+            </div>
+        </div>
+    </header>
+    <section class="navegacao">
+        <div class="interface">
+            <nav class="menu">
+                <ul>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="#">Promoções</a></li>
+                    <li><a href="#">Favoritos</a></li>
+                    <li><a href="#">Buscar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    
+    <section class="filtrar">
+        <div class="interface">
+            <div class="filter-menu">
+                <select id="category-filter">
+                    <option value="">Categoria</option>
+                    <option value="tabuas">Tábuas</option>
+                    <option value="queijos">Queijos</option>
+                    <option value="charcutaria">Charcutaria</option>
+                    <option value="doces">Doces</option>
+                </select>
+                <select id="price-filter">
+                    <option value="">Preço</option>
+                    <option value="baixo">Baixo</option>
+                    <option value="medio">Médio</option>
+                    <option value="alto">Alto</option>
+                </select>
+                    <input type="text" id="search-filter" placeholder="Buscar...">
+                    <button onclick="applyFilters()">Filtrar</button>
+            </div>
+        </div>
+    </section>
+    <section class="catalogo">
+        <div class="interface">
+            <div class="titulo">
+                <h2>Mais Pedidos:</h2>
+            </div>
+            <div class="imgcatalogo">
+                <ul>
+                    <li><a href="#"><img src="imagens/tabua--1.jpg" width="121px" height="173"></a><h3><span>★★★★★</span></h3><p>Tábua de frios <br>R$59,99</p></li>
+                    <li><a href="#"><img src="imagens/capeleti.jpg" width="131px" height="173"></a><h3><span>★★★★★</span></h3><p>Capelletti <br>R$39,99</p></li>
+                    <li><a href="#"><img src="imagens/queijovinho.jpg" width="141px" height="173"></a><h3><span>★★★★★</span></h3><p>Queijo + Vinho <br>R$109,99</p></li>
+                    <li><a href="#"><img src="imagens/sanduicheitaliano.jpg" width="141px" height="173"></a><h3><span>★★★★★</span></h3><p>Sanduíche Italiano <br>R$19,99</p></li>
+                </ul>
+            </div>
+            <div class="titulo">
+                <h2>Queijos: </h2>
+            </div>
+            <div class="imgcatalogo">
+                <ul>
+                    <li><a href="#"><img src="imagens/queijo1.jpg" width="151px" height="173"></a><h3><span>★★★★★</span></h3><p>Queijo Serra da Canastra <br>R$59,99</p></li>
+                    <li><a href="#"><img src="imagens/queijo2.jpg" width="151px" height="173"></a><h3><span>★★★★★</span></h3><p>Mix de Queijos <br>R$39,99</p></li>
+                    <li><a href="#"><img src="imagens/queijo3.jpg" width="151px" height="173"></a><h3><span>★★★★★</span></h3><p>Queijo fresco <br>R$109,99</p></li>
+                    <li><a href="#"><img src="imagens/queijo4.jpg" width="191px" height="173"></a><h3><span>★★★★★</span></h3><p>Queijo Minas <br>R$19,99</p></li>
+                </ul>
+            </div>
+            <div class="titulo">
+                <h2>Charcutaria: </h2>
+            </div>
+            <div class="imgcatalogo">
+                <ul>
+                    <li><a href="#"><img src="imagens/presunto1.jpg" width="121px" height="173"></a><h3><span>★★★★★</span></h3><p>Presunto <br>R$59,99</p></li>
+                    <li><a href="#"><img src="imagens/presunto2.jpg" width="131px" height="173"></a><h3><span>★★★★★</span></h3><p>Presunto<br>R$39,99</p></li>
+                    <li><a href="#"><img src="imagens/presunto3.jpg" width="141px" height="173"></a><h3><span>★★★★★</span></h3><p>Presunto <br>R$109,99</p></li>
+                    <li><a href="#"><img src="imagens/presunto4.jpg" width="141px" height="173"></a><h3><span>★★★★★</span></h3><p>Presunto <br>R$19,99</p></li>
+                </ul>
+            </div>
+            <div class="titulo">
+                <h2>Doces: </h2>
+            </div>
+            <div class="imgcatalogo">
+                <ul>
+                    <li><a href="#"><img src="imagens/doce 1.jpg" width="121px" height="173"></a><h3><span>★★★★★</span></h3><p>Doce <br>R$59,99</p></li>
+                    <li><a href="#"><img src="imagens/doce 2.jpg" width="131px" height="173"></a><h3><span>★★★★★</span></h3><p>Doce <br>R$39,99</p></li>
+                    <li><a href="#"><img src="imagens/doce 3.jpg" width="141px" height="173"></a><h3><span>★★★★★</span></h3><p>Doce  <br>R$109,99</p></li>
+                    <li><a href="#"><img src="imagens/doce 4.jpg" width="141px" height="173"></a><h3><span>★★★★★</span></h3><p>Doce  <br>R$19,99</p></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function applyFilters() {
+            var category = document.getElementById('category-filter').value;
+            var price = document.getElementById('price-filter').value;
+            var search = document.getElementById('search-filter').value;
+
+            console.log('Categoria:', category);
+            console.log('Preço:', price);
+            console.log('Buscar:', search);
+
+            // Aqui você pode adicionar a lógica para aplicar os filtros
+            // Por exemplo, fazer uma requisição ao servidor ou filtrar itens na página
+        }
+    </script>
+</body>
+</html>
