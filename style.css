@@ -86,25 +86,12 @@ header .logo {
     position: relative;
 }
 
-.menu li:hover > .a {
-    transform: translateY(-5px) scale(1.2);   
-    text-decoration: underline #633211;
-}
 
 
-.menu li:hover{
-    transform: translateY(-5px);
-    transform: scale(1.2);   
-    text-decoration: underline #633211;
-}
-/* .menu li:nth-child(4):hover{
-    transform: scale(1.0);
-} */
+.menu a:hover{
+    color: #633211;
+    transition: all 0.5s ease-in-out 0s;
 
-.menu li a :nth-child(4):hover{
-    transform: translateY(-5px);
-    transform: scale(1.2);   
-    text-decoration: underline #633211;
 }
 
 .menu li{
@@ -112,7 +99,7 @@ header .logo {
 }
 .menu a {
     text-decoration: none;
-    color: #000; /* Define a cor dos links */
+    color: #665959;
     font-weight: bold;
 }
 .navegacao ul li a{
@@ -372,4 +359,36 @@ section.carousel-text{
         width: 100%;
         margin: 10px 0;
     }
+}
+
+/* ESTILO FOOTER */
+footer{
+    padding: 10px 4%;
+    background-color: #FFB901;
+}
+footer.textoRedeSocial p{
+    font-size: 18px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+footer.iconeRedeSocial{
+    font-size: 50px;
+
+}
+footer .iconeRedeSocial li a{
+    text-decoration: none;
+    color: #000;
+
+
+}
+footer .iconeRedeSocial li {
+    display: inline-block;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+
+}
+footer .interface{
+
+        display: flex;
+        justify-content: space-between; 
+
 }
